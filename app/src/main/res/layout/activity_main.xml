@@ -32,12 +32,12 @@
 
     <Button
         android:layout_width="120sp"
+        android:background="@drawable/button1"
         android:id="@+id/startBtn"
         android:layout_height="60sp"
         android:text="Start"
         android:textSize="25sp"
         android:textColor="#ff0000"
-        android:backgroundTint="#00FFFFFF"
         android:fontFamily="@font/creepster"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
