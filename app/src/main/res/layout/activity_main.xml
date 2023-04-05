@@ -31,17 +31,19 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <Button
-        android:layout_width="120sp"
         android:id="@+id/startBtn"
+        android:layout_width="120sp"
         android:layout_height="60sp"
-        android:text="Start"
-        android:textSize="25sp"
-        android:textColor="#ff0000"
-        android:backgroundTint="#00FFFFFF"
+        android:backgroundTint="#4F000000"
         android:fontFamily="@font/creepster"
+        android:text="Start"
+        android:textColor="#ff0000"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 </androidx.constraintlayout.widget.ConstraintLayout>
