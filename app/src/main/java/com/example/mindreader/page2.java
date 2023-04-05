@@ -13,6 +13,8 @@ public class page2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
+        getSupportActionBar().hide();
+
 
         Button nextbtn = findViewById(R.id.nextbtn);
         Intent nextactivity = new Intent(page2.this,page3.class);
