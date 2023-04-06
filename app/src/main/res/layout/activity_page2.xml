@@ -11,17 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/wallbg"
+        app:srcCompat="@drawable/bg"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:fontFamily="@font/creepster"
+        android:fontFamily="@font/spookey"
         android:minHeight="40dp"
         android:text="3. subtract the total from the original number"
         android:textColor="#ff0000"
@@ -33,12 +33,11 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:fontFamily="@font/creepster"
-        android:inputType="textPersonName"
+        android:fontFamily="@font/spookey"
         android:minHeight="48dp"
         android:text="2. Add both digit together."
         android:textColor="#ff0000"
@@ -51,12 +50,11 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <TextView
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:fontFamily="@font/creepster"
-        android:inputType="textPersonName"
+        android:fontFamily="@font/spookey"
         android:minHeight="48dp"
         android:text="1. chose any two digit number"
         android:textColor="#ff0000"
@@ -68,6 +66,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.303" />
 
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/spookey"
+        android:minHeight="48dp"
+        android:text="Example: if chosen number is 69 : add two digit together : 6+9=15 then subtract 15 from 69 to get the answer."
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
     <Button
         android:id="@+id/nextbtn"
         android:layout_width="100sp"
@@ -77,7 +92,7 @@
         android:textSize="25sp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="60dp"
-        android:fontFamily="@font/creepster"
+        android:fontFamily="@font/spookey"
         android:backgroundTint="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

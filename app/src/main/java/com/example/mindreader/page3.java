@@ -13,5 +13,15 @@ public class page3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page3);
-        getSupportActionBar().hide();    }
+        getSupportActionBar().hide();
+
+        Button nextbtn2 = findViewById(R.id.nextbtn2);
+        Intent nextactivity = new Intent(page3.this,MainActivity4.class);
+        nextbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(nextactivity);
+            }
+        });
+    }
 }
