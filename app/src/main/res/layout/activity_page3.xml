@@ -6,25 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".page3">
 
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:srcCompat="@drawable/bg"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/bg"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/chatnew" />
 
     <Button
         android:id="@+id/nextbtn2"
         android:layout_width="100sp"
         android:layout_height="60sp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4F000000"
+        android:fontFamily="@font/spookey"
         android:text="Next"
         android:textColor="#ff0000"
         android:textSize="25sp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="60dp"
-        android:fontFamily="@font/spookey"
-        android:backgroundTint="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
