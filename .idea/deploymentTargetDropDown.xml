@@ -7,11 +7,19 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
+<<<<<<< HEAD
             <value value="C:\Users\varad\.android\avd\new_phone.avd" />
+=======
+            <value value="C:\Users\shivk\.android\avd\iphone.avd" />
+>>>>>>> origin/master
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
+<<<<<<< HEAD
     <timeTargetWasSelectedWithDropDown value="2023-04-06T14:46:59.182561600Z" />
+=======
+    <timeTargetWasSelectedWithDropDown value="2023-04-08T07:19:41.727556700Z" />
+>>>>>>> origin/master
   </component>
 </project>
