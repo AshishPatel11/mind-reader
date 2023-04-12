@@ -25,13 +25,13 @@ public class MainActivity4 extends AppCompatActivity {
         ImageView globe = (ImageView) findViewById(R.id.imageView2);
         Button btn = findViewById(R.id.tryAgain);
         TextView clickme = findViewById(R.id.clickme);
+        Animation fade = AnimationUtils.loadAnimation(this,R.anim.fade);
+        Animation fadeout = AnimationUtils.loadAnimation(this,R.anim.fadeout);
 
         Bundle bundle = getIntent().getExtras();
 
         int name[] = {R.mipmap.spotify,R.mipmap.android,R.mipmap.apple,R.mipmap.bluetooth,R.mipmap.code,R.mipmap.github,R.mipmap.google,R.mipmap.insta,R.mipmap.java,R.mipmap.js,R.mipmap.keybrd,R.mipmap.linkdin,R.mipmap.mouse,R.mipmap.msg,R.mipmap.pin,R.mipmap.portal,R.mipmap.processor,R.mipmap.python,R.mipmap.react,R.mipmap.wifi};
 
-        Animation fade = AnimationUtils.loadAnimation(this,R.anim.fade);
-        Animation fadeout = AnimationUtils.loadAnimation(this,R.anim.fadeout);
 
         globe.setOnClickListener(new View.OnClickListener() {
             @Override
