@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity4">
 
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -22,17 +21,17 @@
 
     <ImageView
         android:id="@+id/displayans"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
+        app:layout_constraintVertical_bias="0.293" />
 
     <Button
-        android:id="@+id/restart"
+        android:id="@+id/tryAgain"
         android:layout_width="190sp"
         android:layout_height="60sp"
         android:backgroundTint="#4F000000"
@@ -40,10 +39,25 @@
         android:text="Try Again!"
         android:textColor="#ff0000"
         android:textSize="25sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/clickme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click me!"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:fontFamily="@font/spookey"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
 </androidx.constraintlayout.widget.ConstraintLayout>
