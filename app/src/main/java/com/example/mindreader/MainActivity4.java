@@ -21,8 +21,8 @@ public class MainActivity4 extends AppCompatActivity {
 
         if(bundle != null)
         {
-            int imageans = bundle.getInt("imageAns");
-            imageView.setImageResource(imageans);
+            int imageAns = bundle.getInt("imageAns");
+            imageView.setImageResource(imageAns);
         }
     }
 }

@@ -17,8 +17,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/globedesign"
-        tools:ignore="MissingConstraints"
-        />
+        android:contentDescription=" "
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/displayans"
