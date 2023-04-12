@@ -59,6 +59,7 @@
         android:text="1. chose any two digit number"
         android:textColor="#ff0000"
         android:textSize="30sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.0"

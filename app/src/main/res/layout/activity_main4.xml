@@ -11,13 +11,13 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription=" "
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/globedesign"
-        android:contentDescription=" "
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -31,4 +31,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.327" />
 
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="190sp"
+        android:layout_height="60sp"
+        android:backgroundTint="#4F000000"
+        android:fontFamily="@font/spookey"
+        android:text="Try Again!"
+        android:textColor="#ff0000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
 </androidx.constraintlayout.widget.ConstraintLayout>
