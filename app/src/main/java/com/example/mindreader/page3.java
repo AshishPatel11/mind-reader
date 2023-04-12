@@ -30,7 +30,7 @@ public class page3 extends AppCompatActivity {
 
         Button nextbtn2 = findViewById(R.id.nextbtn2);
         Intent nextactivity = new Intent(page3.this,MainActivity4.class);
-        nextactivity.putExtra("imageAns",name[ranImg]);
+        nextactivity.putExtra("imageAns",ranImg);
         nextbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
