@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed(){
+        finishAffinity();
+    }
     public void activity2(){
         Intent intent = new Intent(this, page2.class);
         startActivity(intent);
