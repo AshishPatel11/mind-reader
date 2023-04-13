@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -27,6 +28,8 @@ public class MainActivity4 extends AppCompatActivity {
         TextView clickme = findViewById(R.id.clickme);
         Animation fade = AnimationUtils.loadAnimation(this,R.anim.fade);
         Animation fadeout = AnimationUtils.loadAnimation(this,R.anim.fadeout);
+        MediaPlayer imposter = MediaPlayer.create(this,R.raw.imposter);
+
 
         Bundle bundle = getIntent().getExtras();
 
@@ -46,6 +49,13 @@ public class MainActivity4 extends AppCompatActivity {
                 imageView.setAnimation(fade);
                 clickme.setAnimation(fadeout);
                 clickme.setVisibility(View.INVISIBLE);
+                imposter.start();
+                imposter.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        imposter.reset();
+                    }
+                });
             }
         });
         Intent nextactivity = new Intent(MainActivity4.this,MainActivity.class);
