@@ -18,11 +18,10 @@
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="wrap_content"
+        android:paddingLeft = "20sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:fontFamily="@font/spookey"
-        android:minHeight="40dp"
         android:text="3. subtract the total from the original number"
         android:textColor="#ff0000"
         android:textSize="30sp"
@@ -34,11 +33,10 @@
 
     <TextView
         android:id="@+id/text2"
-        android:layout_width="wrap_content"
+        android:paddingLeft = "20sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:fontFamily="@font/spookey"
-        android:minHeight="48dp"
         android:text="2. Add both digit together."
         android:textColor="#ff0000"
         android:textSize="30sp"
@@ -51,12 +49,11 @@
 
     <TextView
         android:id="@+id/text3"
-        android:layout_width="wrap_content"
+        android:paddingLeft = "20sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:fontFamily="@font/spookey"
-        android:minHeight="48dp"
-        android:text="1. chose any two digit number"
+        android:text="1. choose any two digit number"
         android:textColor="#ff0000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,17 +65,15 @@
 
     <TextView
         android:id="@+id/text4"
-        android:layout_width="wrap_content"
+        android:paddingLeft = "20sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:fontFamily="@font/spookey"
-        android:minHeight="48dp"
         android:text="Example: if chosen number is 69 : add two digit together : 6+9=15 then subtract 15 from 69 to get the answer."
         android:textColor="#ff0000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74" />
