@@ -4,27 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
- private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
-
-
-        button = (Button) findViewById(R.id.startBtn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                activity2();
-            }
-        });
+        Button button = findViewById(R.id.startBtn);
+        button.setOnClickListener(view -> activity2());
     }
     public void onBackPressed(){
         finishAffinity();
