@@ -1,27 +1,26 @@
 package com.example.mindreader;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import java.util.Objects;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Objects.requireNonNull(getSupportActionBar()).hide();
 
         Button button = findViewById(R.id.startBtn);
-        button.setOnClickListener(view -> activity2());
+        button.setOnClickListener(view -> goToNextActivity());
     }
-    public void onBackPressed(){
+
+    public void onBackPressed() {
         finishAffinity();
     }
-    public void activity2(){
+
+    public void goToNextActivity() {
         Intent intent = new Intent(this, page2.class);
         startActivity(intent);
     }

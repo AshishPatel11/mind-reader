@@ -1,36 +1,47 @@
 package com.example.mindreader;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.ImageView;
 
-import java.util.Objects;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.mindreader.adapters.IconAdapter;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class page3 extends AppCompatActivity {
+
+    RecyclerView recyclerView;
+    Map<Integer, Integer> models;
+    ArrayList<Integer> ansArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page3);
-        Objects.requireNonNull(getSupportActionBar()).hide();
 
+        recyclerView = findViewById(R.id.recyclerView);
 
+        models = new HashMap<>();
+        ansArray = new ArrayList<>(Arrays.asList(9,18,27,36,45,54,63,72,81));
 
-        int[] name = {R.drawable.spotify,R.drawable.android,R.drawable.apple,R.drawable.bluetooth,R.drawable.code,R.drawable.github,R.drawable.google,R.drawable.insta,R.drawable.java,R.drawable.js,R.drawable.keybrd,R.drawable.linkdin,R.drawable.mouse,R.drawable.msg,R.drawable.pin,R.drawable.portal,R.drawable.processor,R.drawable.python,R.drawable.react,R.drawable.wifi};
+        Random rand = new Random();
 
-        ImageView chart = findViewById(R.id.chart);
-        Random random = new Random();
-        int ranImg = random.nextInt(name.length);
-        chart.setImageResource(name[ranImg]);
+        for (int i = 0; i <= 99; i++) {
+            models.put(i,R.mipmap.i1 + rand.nextInt(50));
+        }
 
+//        IconAdapter adapter = new IconAdapter(models);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 6));
+//        recyclerView.setAdapter(adapter);
 
-        Button nextBtn2 = findViewById(R.id.nextbtn2);
-        Intent nextActivity = new Intent(page3.this,MainActivity4.class);
-        nextActivity.putExtra("imageAns",ranImg);
-        nextBtn2.setOnClickListener(view -> startActivity(nextActivity));
     }
 }

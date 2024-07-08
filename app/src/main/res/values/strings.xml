@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mind reader</string>
+    <string name="_00">00</string>
+    <string name="icons">icons</string>
 </resources>
