@@ -6,13 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".page3">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/bg"
-        android:scaleType="centerCrop"
-        />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="wrap_content"
@@ -25,15 +18,15 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <Button
-        android:id="@+id/nextbtn2"
-        android:layout_width="100sp"
-        android:layout_height="60sp"
+        android:id="@+id/nextBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="#4F000000"
         android:fontFamily="@font/popins"
-        android:text="Next"
-        android:textColor="#ff0000"
+        android:text="@string/next"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

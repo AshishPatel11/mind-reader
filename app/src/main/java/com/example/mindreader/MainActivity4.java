@@ -22,22 +22,20 @@ public class MainActivity4 extends AppCompatActivity {
         setContentView(R.layout.activity_main4);
 
         //image view
-        ImageView imageView = findViewById(R.id.displayans);
+        ImageView imageView = findViewById(R.id.displayAns);
         ImageView globe = findViewById(R.id.imageView2);
         Button btn = findViewById(R.id.tryAgain);
-        TextView clickMe = findViewById(R.id.clickme);
+        TextView clickMe = findViewById(R.id.clickMe);
         Animation fade = AnimationUtils.loadAnimation(this, R.anim.fade);
         Animation fadeout = AnimationUtils.loadAnimation(this, R.anim.fadeout);
         MediaPlayer imposterSound = MediaPlayer.create(this, R.raw.imposter);
 
         Bundle bundle = getIntent().getExtras();
 
-        int[] name = {};
-
         globe.setOnClickListener(v -> {
             if (bundle != null) {
-                int imageAns = bundle.getInt("imageAns");
-                imageView.setImageResource(name[imageAns]);
+                int imageAns = bundle.getInt("answer");
+                imageView.setImageResource(imageAns);
             }
             btn.setVisibility(View.VISIBLE);
             btn.setAnimation(fade);

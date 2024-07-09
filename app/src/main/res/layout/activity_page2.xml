@@ -1,95 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".page2">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/bg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text1"
-        android:paddingStart = "20sp"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/popins"
-        android:text="3. subtract the total from the original number"
-        android:textColor="#ff0000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        tools:ignore="MissingConstraints" />
+        android:text="@string/_1_choose_any_two_digit_number"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/text2"
-        android:paddingStart = "20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2. Add both digit together."
         android:fontFamily="@font/popins"
-        android:textColor="#ff0000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        android:text="@string/_2_add_both_digit_together"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/text3"
-        android:paddingLeft = "20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/popins"
-        android:text="1. choose any two digit number"
-        android:textColor="#ff0000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        android:text="@string/_3_subtract_the_total_from_the_original_number"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
 
     <TextView
         android:id="@+id/text4"
-        android:paddingLeft = "20sp"
+        android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Example: if chosen number is 69 : add two digit together : 6+9=15 then subtract 15 from 69 to get the answer."
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/popins"
-        android:textColor="#ff0000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
+        android:text="@string/example_if_chosen_number_is_69_add_two_digit_together_6_9_15_then_subtract_15_from_69_to_get_the_answer"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
 
     <Button
-        android:id="@+id/nextbtn"
-        android:layout_width="100sp"
-        android:layout_height="60sp"
-        android:text="Next"
-        android:textColor="#ff0000"
-        android:textSize="20sp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="60dp"
-        android:fontFamily="@font/popins"
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="#4F000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:fontFamily="@font/popins"
+        android:text="@string/next"
+        android:textColor="@color/black"
+        android:layout_marginVertical="30dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

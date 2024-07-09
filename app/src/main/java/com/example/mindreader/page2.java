@@ -15,7 +15,7 @@ public class page2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
 
-        Button nextBtn = findViewById(R.id.nextbtn);
+        Button nextBtn = findViewById(R.id.nextBtn);
         Intent nextActivity = new Intent(page2.this, page3.class);
         nextBtn.setOnClickListener(view -> startActivity(nextActivity));
     }

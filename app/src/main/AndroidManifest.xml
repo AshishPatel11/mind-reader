@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:icon="@drawable/icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MindReader"
+        android:theme="@style/noActionBar"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity4"

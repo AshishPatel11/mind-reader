@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToNextActivity() {
-        Intent intent = new Intent(this, page2.class);
-        startActivity(intent);
+        startActivity(new Intent(this, page2.class));
     }
 }

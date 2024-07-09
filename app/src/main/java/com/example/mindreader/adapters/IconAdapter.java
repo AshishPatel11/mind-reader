@@ -9,14 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mindreader.IconNumberModel;
 import com.example.mindreader.R;
 
-import java.util.ArrayList;
+import java.util.Map;
 
 public class IconAdapter extends RecyclerView.Adapter<IconAdapter.ViewHolder> {
 
-    private final ArrayList<IconNumberModel> iconModel;
+    private final Map<Integer, Integer> iconModel;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView text;
@@ -29,7 +28,7 @@ public class IconAdapter extends RecyclerView.Adapter<IconAdapter.ViewHolder> {
         }
     }
 
-    public IconAdapter(ArrayList<IconNumberModel> iconModel) {
+    public IconAdapter(Map<Integer, Integer> iconModel) {
         this.iconModel = iconModel;
     }
 
@@ -43,8 +42,8 @@ public class IconAdapter extends RecyclerView.Adapter<IconAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.image.setImageResource(iconModel.get(position).image);
-        holder.text.setText(iconModel.get(position).number);
+        holder.image.setImageResource(iconModel.get(position));
+        holder.text.setText(String.format("%s",position));
     }
 
     @Override
